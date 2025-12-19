@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+        height: 960px;
+      }
+      .card {
+        padding: 16px 16px 40px 16px;
+        background-color: white;
+        width: 320px;
+        height: 499px;
+        font-size: 15px;
+        text-align: center;
+        font-family: "";
+        border-radius: 20px;
+      }
+      .QR-img {
+        margin: 0 auto;
+        margin-bottom: 24px;
+        border-radius: 10px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .content {
+        width: 288px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .outfit-title {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 22px;
+        margin-bottom: 16px;
+      }
+      .outfit-desc {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* 모바일에서만 */
+      @media (max-width: 480px) {
+        .wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 375px;
+          height: 812px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap bg-slate-300">
+      <div class="card">
+        <img
+          src="./images/image-qr-code.png"
+          alt="QR"
+          width="288px"
+          height="288px"
+          class="QR-img"
+        />
+        <div class="content">
+          <p class="card-title text-slate-900 outfit-title">
+            Improve your front-end skills by building projects
+          </p>
+          <p class="card-desc text-slate-500 outfit-desc">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lee yejun</a>.
+    </div> -->
+  </body>
+</html>
